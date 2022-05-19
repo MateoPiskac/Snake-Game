@@ -24,12 +24,9 @@ public class TrackingBall {
         x += dx * easing;
         float dy = positionTracker.y - y;
         y += dy * easing;
-
         circle.drawSelf(x, y);
-
         position.x=x;
         position.y=y;
-
         return position;
     }
 }

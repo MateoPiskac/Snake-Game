@@ -39,7 +39,7 @@ public class ProcessingDemo extends PApplet {
         for (Drawable d : drawables) {
             d.drawSelf();
         }
-        if (trackingBalls.size() > 0) {
+        if (trackingBalls.size() > 0) { //draws the body
             PVector positionTrackerVector = trackingBalls.get(0).drawFollowingFirstSelf(mouseX, mouseY);
 
             for (int i = 1; i < trackingBalls.size(); i++) {
